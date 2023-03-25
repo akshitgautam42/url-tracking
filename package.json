@@ -1,0 +1,23 @@
+{
+  "name": "url-tracking",
+  "version": "1.0.0",
+  "description": "URL tracking application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "akshitgautam42"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.2.2",
+    "uuid": "^8.3.2"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "Akshit Gautam",
+  "license": "ISC"
+}
