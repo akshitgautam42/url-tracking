@@ -11,8 +11,10 @@
     "url": "akshitgautam42"
   },
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.17.1",
-    "mongoose": "^6.2.2",
+    "mongoose": "^6.10.4",
+    "node": "^19.8.1",
     "nodemon": "^2.0.22",
     "uuid": "^8.3.2"
   },
