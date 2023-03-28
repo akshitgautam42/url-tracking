@@ -1,24 +1,17 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/urls',{
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}, (err) => {
-  if (err) {
-    console.log('Error connecting to database:', err);
-  } else {
-    console.log('Database connected successfully!');
+const connectDB = async () => {
+  try {
+    await mongoose.connect('mongodb://localhost/urls', {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    //console.log('MongoDB connected...');
+  } catch (err) {
+    console.error(err.message);
+    // Exit process with failure
+    process.exit(1);
   }
-});
+};
 
-const shortSchema = new mongoose.Schema({
-  full : {
-      type: String,
-      required : true,
-  }});
-
-  const ShortUrl = mongoose.model('ShortUrl', shortSchema);
-
-ShortUrl.create({ full: "google.com" })
-    .then(() => console.log("Document created"))
-    .catch((err) => console.error(err));
+module.exports = connectDB;
