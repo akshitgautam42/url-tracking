@@ -29,4 +29,4 @@ The application also includes an API that can be used to generate short URLs pro
 
 ## Credits
 
-This application was created by [Your Name](https://github.com/akshitgautam42).
+This application was created by [Akshit Gautam](https://github.com/akshitgautam42).
